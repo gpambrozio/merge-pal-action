@@ -1,4 +1,4 @@
-import Octokit = require('@octokit/rest')
+import { Octokit } from '@octokit/rest'
 
 export function canMergeByMergeable(pr: Octokit.PullsGetResponse) {
     return pr.mergeable
